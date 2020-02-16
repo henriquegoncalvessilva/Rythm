@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    //EXAMPLE of Count of Samples
     public static float[] _samples = new float[512];
 
     [SerializeField]
