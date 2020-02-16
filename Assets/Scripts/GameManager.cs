@@ -10,45 +10,14 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     AudioSource music;
 
-    [SerializeField]
-    bool playGame;
-
-    [SerializeField]
-    NoteController nController;
-
-    [SerializeField]
-    KeyCode key;
-
-    
-
-    void Start()
-    {
-       
-    }
-
     void Update()
     {
 
-       
+
 
         music.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
 
-        /*if (!playGame)
-        {
-            if (Input.GetKeyDown(key))
-            {
-                playGame = true;
-                nController.SetStart(playGame);
-            }
-        }*/
 
-        /*  else if (playGame)
-
-              if (Input.GetKeyDown(key))
-              {
-                  playGame = false;
-                  nController.SetStart(playGame);
-              }*/
     }
 
 
